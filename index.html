@@ -5,12 +5,148 @@
 <div class="nav-actions"><a class="btn btn-outline" href="tel:7771000614">Call Now</a><a class="btn btn-accent" href="contact.html#quote">Get Quote</a></div>
 <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button></div></header>
 <main>
-<style>   .hero-video-banner {     position: relative;     width: 100%;     min-height: 85vh;     display: flex;     align-items: center;     justify-content: center;     overflow: hidden;     text-align: center;     color: white;     padding: 80px 20px;   }   .hero-video-banner video {     position: absolute;     top: 50%;     left: 50%;     min-width: 100%;     min-height: 100%;     width: auto;     height: auto;     transform: translateX(-50%) translateY(-50%);     object-fit: cover;     z-index: 1;   }   .hero-overlay {     position: absolute;     top: 0;     left: 0;     width: 100%;     height: 100%;     background: rgba(11, 18, 32, 0.65);     z-index: 2;   }   .hero-video-content {     position: relative;     z-index: 3;     max-width: 900px;     margin: 0 auto;   }   .hero-video-content .eyebrow {     color: #f37021;     font-weight: 700;     letter-spacing: 2px;     margin-bottom: 15px;     display: block;     text-transform: uppercase;   }   .hero-video-content h1 {     font-size: 3.5rem;     line-height: 1.1;     margin: 0 0 20px 0;     color: #ffffff;     font-weight: 800;   }   .hero-video-content .lead {     font-size: 1.25rem;     color: #e2e8f0;     margin-bottom: 10px;   }   .hero-video-content .categories-text {     font-size: 1rem;     color: #a0aec0;     margin-bottom: 30px;   }   .hero-video-actions {     display: flex;     gap: 15px;     justify-content: center;   }   .hero-video-meta {     margin-top: 30px;     font-size: 0.9rem;     color: #cbd5e1;   }   .hero-video-meta a {     color: #fff;     text-decoration: underline;   }   @media (max-width: 768px) {     .hero-video-banner { min-height: 75vh; }     .hero-video-content h1 { font-size: 2.2rem; }     .hero-video-actions { flex-direction: column; width: 100%; max-width: 300px; margin: 0 auto; }   } </style>  <section class="hero-video-banner">   <video autoplay loop muted playsinline fetchpriority="high">     <source src="assets/hero-video.mp4" type="video/mp4">   </video>   <div class="hero-overlay"></div>      <div class="hero-video-content container">
-<div class="eyebrow">RAJPUT BUILDMART · KOLAR, BHOPAL</div><h1>PREMIUM SPACES.<br>SMARTER CHOICES.</h1>
-<p class="lead">Premium bathroom, sanitaryware, plumbing and building solutions — thoughtfully selected for modern homes and projects.</p>
-<p>Sanitaryware · Faucets · Showers · Plumbing · Hardware · Electrical · Paints · Tiles</p>
-<div class="hero-actions" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-top: 25px;"><a class="btn btn-accent" href="catalogues.html">Explore Catalogues</a><a class="btn btn-outline" href="contact.html#quote" style="color: white; border-color: white;">Get a Quote</a></div>
-</div><div class="hero-showroom-badge" aria-hidden="true"><span>SHOWROOM</span><strong>Premium Bathware</strong><small>Curated products for refined spaces</small></div></section>
+<style>
+  .hero-video-banner {
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+  }
+  .hero-video-banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+    z-index: 1;
+  }
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(11,18,32,0.4) 0%, rgba(11,18,32,0.85) 100%);
+    z-index: 2;
+  }
+  .hero-video-content {
+    position: relative;
+    z-index: 3;
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-video-content .eyebrow {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 8px 24px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  .hero-video-content h1 {
+    font-size: 4.2rem;
+    line-height: 1.1;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+    font-weight: 800;
+    text-shadow: 0 4px 25px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0,0,0,0.5);
+  }
+  .hero-video-content .lead {
+    font-size: 1.3rem;
+    color: #f8fafc;
+    margin-bottom: 35px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.9);
+    max-width: 800px;
+  }
+  .category-badges {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .category-badges span {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    cursor: default;
+  }
+  .category-badges span:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  .hero-video-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .hero-video-banner { min-height: 75vh; padding: 60px 15px; }
+    .hero-video-content h1 { font-size: 2.5rem; }
+    .hero-video-content .lead { font-size: 1.1rem; }
+    .hero-video-actions { flex-direction: column; width: 100%; max-width: 300px; margin: 0 auto; }
+  }
+</style>
+
+<section class="hero-video-banner">
+  <video autoplay loop muted playsinline fetchpriority="high">
+    <source src="assets/hero-video.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  
+  <div class="hero-video-content container">
+    <div class="eyebrow">WELCOME TO RAJPUT BUILDMART</div>
+    <h1>PREMIUM SPACES.<br>SMARTER CHOICES.</h1>
+    <p class="lead">Where premium products, trusted brands and thoughtful choices come together for modern homes and projects.</p>
+    
+    <div class="category-badges">
+      <span>Plumbing</span>
+      <span>Sanitaryware</span>
+      <span>Hardware</span>
+      <span>Electrical</span>
+      <span>Paints</span>
+      <span>Tiles</span>
+    </div>
+    
+    <div class="hero-video-actions">
+      <a class="btn btn-accent" href="catalogues.html">Explore Catalogues</a>
+      <a class="btn btn-outline" href="contact.html#quote" style="color: white; border-color: white;">Get a Quote</a>
+    </div>
+  </div>
+</section>
 <section class="trust"><div class="container trust-grid">
 <div class="trust-item"><strong>6 Major Categories</strong><span>Building & home-improvement essentials</span></div><div class="trust-item"><strong>Trusted Brands</strong><span>Brands available across key categories</span></div><div class="trust-item"><strong>Home & Project Requirements</strong><span>Source multiple requirements in one place</span></div><div class="trust-item"><strong>Professional Assistance</strong><span>Practical product guidance</span></div></div></section>
 <section class="section reveal"><div class="container"><div class="section-head"><div><div class="eyebrow">Explore Categories</div><h2>Everything you need to build, improve & finish.</h2></div><p>Explore six core categories for homeowners, contractors, builders and home-improvement professionals.</p></div>
